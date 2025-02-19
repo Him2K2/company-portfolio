@@ -1,9 +1,17 @@
-var express = require('express');
+var express = require("express");
+const UsersService = require("../services/users");
+
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+
+router.get("/", async function (req, res) {
+  try {
+    const usersData = await UsersService.getById();
+    res.json(usersData); 
+  } catch (error) {
+    console.error("Lỗi khi lấy dữ liệu người dùng:", error);
+    res.status(500).json({ error: "Lỗi server" });
+  }
 });
 
 module.exports = router;
