@@ -1,13 +1,22 @@
-const { shipper } = require("../data-manager");
+const DataManager = require("../data-manager");
 
 class PortfolioService {
+
     constructor() {
+       
     }
 
-    static getById() {
-        return {
-            
+    getById(id) {
+        let allData = DataManager.allData;
+        let rawPortfolioData = allData['portfolios'][id];
+        let portfolioData = {
+            company: {},
+            products: {},
+            employees: {},
+            pages: {}
         }
+
+        return portfolioData;
     }
 }
 

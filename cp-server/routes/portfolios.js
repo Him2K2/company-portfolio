@@ -3,9 +3,10 @@ const PortfolioService = require('../services/portfolios');
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', async function(req, res, next) {
   let portfolioId = req.query.id;
-  let portfolioData = PortfolioService.getById(portfolioId);
+  let portfolioService = new PortfolioService();
+  let portfolioData = await portfolioService.getById(portfolioId);
   res.jsonp(portfolioData);
 });
 
