@@ -1,0 +1,25 @@
+    .wrapper{
+        position: relative;
+        background-image: url("../../assets/img/anh1.jpg");
+        background-size: cover;  
+        background-position: center;  
+        width: 100vw;  
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.574);
+    }
+    .overlay{
+      
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.684); 
+    }
+    .backgroundlogo{
+
+        position: absolute;
+        background-color: linear-gradient(to left,#00b4db,#000be0);
+        width: 1000px;
+        height: 1000px;
+    }
