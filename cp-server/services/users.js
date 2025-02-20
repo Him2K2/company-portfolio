@@ -1,11 +1,12 @@
-
-
+const DataManager = require("../data-manager");
 
 class UsersService {
   constructor() {}
 
-  static async getById() {
-    return
+  static async getAll() {
+    const allData = DataManager.allData;
+    const users = allData.users
+    return users;
   }
 }
 
