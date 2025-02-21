@@ -1,56 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&display=swap');
+
+$mobile: 480px;
+$tablet: 1024px;
+
 .wrapper {
-    position: relative; 
-  }
-  
-  .backgound {
-    position: relative;
-    background-image: url("../../assets/img/anh1.jpg");
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+
+  img {
     width: 100vw;
     height: 100vh;
+    object-fit: cover;
   }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.684);
-    z-index: 1; 
-  }
-  
-  .backgroundlogo {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%); 
-    background: linear-gradient(to left, #00b4db, #000be0); 
-    width: 400px;
-    height: 300px;
-    z-index: 2; 
+}
 
-  }
-  .logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 200px;   
-    mix-blend-mode: multiply; 
-    height: auto;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.684);
+  z-index: 1;
+}
 
+.backgroundlogo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(to left, #00b4db, #000be0);
+  width: 40rem;
+  height: 30rem;
+  z-index: 2;
+  border-radius: 1.2rem;
+
+
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  mix-blend-mode: multiply;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: all 0.3s ease;
   }
-  .chuc{
-    position: absolute;
-    left: 35%;
-    top: 50%;
-    transform: translateY(-50%); 
-    z-index: 2;
+
+}
+
+.chuc {
+  position: absolute;
+  top: 46%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 39rem;
+  font-weight: lighter;
+  color: #ffffff;
+  font-family: 'Exo 2', sans-serif;
+  z-index: 2;
+
+  &:hover {
+    color: #27a0e6;
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: all 0.3s ease;
+  }
+}
+
+
+
+.companyname {
+  position: absolute;
+  left: 37%;
+  top: 43%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #27a0e6;
+  font-size: 15rem;
+  font-weight: 700;
+  white-space: nowrap;
+
+
+  &:hover {}
+
+}
+
+.info {
+  position: absolute;
+  left: 33%;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 60%;
+  line-height: 1.4;
+
+  &:hover {
+    transform: translate(2%, -50%);
+    transition: all 0.3s ease;
+  }
+
+
+}
+
+@media (max-width: $mobile) {
+  .info {
     color: #ffffff;
-    font-size: 390px; 
-    font-family: Agency FB;
-    
   }
-  
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .backgroundlogo {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    top: 0;
+    margin-top: 5rem;
+    left: auto;
+    transform: none;
+  }
+
+  .companyname {
+    font-size: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: auto;
+    transform: none;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: auto;
+    transform: none;
+  }
+
+}
+
+@media (min-width: ($mobile + 1)) and (max-width: $tablet) {
+  .chuc {
+    display: none;
+  }
+
+  .companyname {
+    margin-left: 10rem;
+  }
+
+  .info {
+    margin-left: 19rem;
+    margin-top: -5rem;
+    top: 1;
+    transform: none;
+    width: 30rem;
+
+  }
+}

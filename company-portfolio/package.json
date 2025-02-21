@@ -1,8 +1,10 @@
 {
   "name": "company-portfolio",
   "version": "0.1.0",
+  "proxy": "http://localhost:3000",
   "private": true,
   "dependencies": {
+    "axios": "^1.7.9",
     "classname": "^0.0.0",
     "classnames": "^2.5.1",
     "cra-template": "1.2.0",

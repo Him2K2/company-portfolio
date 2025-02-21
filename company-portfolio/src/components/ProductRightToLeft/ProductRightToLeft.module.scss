@@ -1,0 +1,191 @@
+$mobile: 480px;
+$tablet: 1024px;
+.wrapper {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 92.1vh;
+
+}
+.cucmauxanh{
+    background-color: rgb(2, 14, 190);
+    width: 7rem;
+    height: 7rem;
+
+}
+.cucmauxanhkhac{
+    position: absolute;
+    top:4rem;
+    left: 115rem;;
+    background-color: rgb(2, 14, 190);
+    width: 20rem;
+    height: 30rem;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4rem;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+
+}
+
+.productname {
+    font-size: 10rem;
+    font-weight: bold;
+    color: rgb(41, 2, 236);
+
+}
+
+.link{
+
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+  
+}
+.ham {
+    display: flex;
+    margin: 1rem;
+}
+
+.cham1 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(0, 12, 143);
+    margin-left: 1rem;
+}
+
+.cham2 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(23, 129, 221);
+    margin-left: 1rem;
+
+}
+
+.cham3 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(147, 202, 245);
+    margin-left: 1rem;
+
+}
+.url{
+    color: rgb(0, 136, 255);
+    text-decoration:dashed;
+}
+
+.description {
+    position: relative;
+    left: -6rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    max-width: 47rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.threebutton {
+    margin-left: 13rem;
+}
+
+
+.button3 {
+    margin: 5rem;
+    margin-left: 2rem;
+    padding: 2rem;
+    width: 15rem;
+    color: aliceblue;
+    background-color: rgb(0, 153, 255);
+    border: none;
+    border-radius: 2rem;
+    &:hover{
+        background-color: rgb(38, 16, 236);
+    }
+}
+
+.year {}
+
+.avatar { 
+
+    position: relative;
+    top:7rem;
+    width: 35rem;
+    height: 40rem;
+    padding: 2rem;
+    background-color: rgba(166, 166, 160, 0.237);
+}
+
+.footeravatar {}
+
+@media (max-width: ($mobile)){
+    .avatar{
+        display: none;
+    }
+    .cucmauxanh{
+        display: none;
+    }
+    .cucmauxanhkhac{
+        display: none;
+    }
+    
+    .productname{
+        font-size: 5rem;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .productname{}
+    .link{
+
+    }
+    .ham{display: none;}
+    .url{
+
+    }
+    .description{
+
+    }
+    .threebutton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+    }
+    .year{
+        display: none;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+
+}
+@media (min-width: ($mobile + 1)) and (max-width: $tablet){
+
+}

@@ -1,0 +1,29 @@
+.wrapper {
+  
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    height: 5.5rem;
+    justify-content: flex-end;
+    z-index: 0;
+  }
+  
+  .countPage {
+    position: relative;
+    top:1rem;
+    left: 5rem;
+    width: 12rem;
+    height: 3rem;
+    background-color: #323030ef;
+    color: #fff;
+    border: solid 1px #000000;
+    border-radius: 1rem;
+    z-index: 1;
+  }
+  
+  .footer {
+    width: 100% !important; 
+    background: #2648c9;
+    height: 5rem;
+  }
+  

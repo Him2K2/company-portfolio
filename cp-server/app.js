@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var productsRouter = require('./routes/products')
 var portfoliosRouter = require('./routes/portfolios');
 const DataManager = require('./data-manager');
 
@@ -23,7 +24,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/portfolios', portfoliosRouter)
+app.use('/portfolios', portfoliosRouter);
+app.use('/products', productsRouter);
 
 const dataFileUrl = "https://docs.google.com/spreadsheets/d/1oRJkMRKAAhgmepzRahS1mwXcXcG-EgdR/export?format=xlsx";
 DataManager.fetchData(dataFileUrl);

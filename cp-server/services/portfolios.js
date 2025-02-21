@@ -42,7 +42,7 @@ class PortfolioService {
     // tìm templateid trong bảng pỏtfolio_pages trùng với portfolioid
     const templateId = allData.portfolio_pages
       .filter((ti) => ti.portfolio_id === portfolio.id)
-      .map((ti) => ti.template_id)
+      .map((ti) => ti.template_id);
 
     //timf template tufw templateid kieems dduocjw
     const portfolioTemplate = allData.templates.filter((t) =>
