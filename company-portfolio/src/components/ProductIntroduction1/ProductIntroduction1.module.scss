@@ -1,0 +1,133 @@
+$mobile: 480px;
+$tablet: 1024px;
+
+.wrapper {}
+
+.backgroundAll {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(246, 246, 246, 0.266);
+  border: 1.5rem solid rgb(252, 252, 252);
+}
+
+.left {
+  position: absolute;
+  width: 50vw;
+  z-index: 2;
+}
+
+.right {
+  position: absolute;
+  left: 50vw;
+  width: 50vw;
+  height: 100vh;
+  z-index: 2;
+  border: 1.5rem solid rgb(255, 255, 255);
+}
+
+.introduction {
+  position: relative;
+  top: 20rem;
+  z-index: 2;
+  min-height: 30vh;
+  border-top: 1.5rem solid rgb(255, 255, 255);
+  border-bottom: 1.5rem solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(8, 8, 157);
+}
+
+.thanhdoc {
+  position: relative;
+  left: 75vw;
+  width: 0.5rem;
+  height: 100vh;
+  border: 0.75rem solid rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.header, .introduct {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  font-size: 2rem;
+}
+
+.introduct {
+  font-size: 5rem;
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+  .wrapper {
+    width: 100vw;
+  }
+
+  .thanhdoc, .overlay, .background, .left {
+    display: none;
+  }
+
+  .backgroundAll {
+    position: static;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    position: static;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .introduction {
+    margin-top: 20rem;
+    display: flex;
+    align-items: center;
+    position: static;
+    padding: 1rem;
+    border: none;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .introduct {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Tablet */
+@media (min-width: ($mobile + 1px)) and (max-width: $tablet) {
+  .header {
+    font-size: 1.8rem;
+  }
+
+  .introduct {
+    font-size: 4rem;
+  }
+}

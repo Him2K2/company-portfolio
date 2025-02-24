@@ -8,7 +8,11 @@ const cx = classNames.bind(styles);
 const data = JSON.parse(localStorage.getItem("data"));
 const products = data.productsData;
 
-export default function ProductRightToLeft({ productId, template, imgID = [] }) {
+export default function ProductRightToLeft({
+  productId,
+  template,
+  imgID = [],
+}) {
   const [productData, setProductData] = useState(null);
   const [imageData, setImageData] = useState([]);
 
@@ -18,12 +22,11 @@ export default function ProductRightToLeft({ productId, template, imgID = [] }) 
     if (product) {
       setProductData(product);
 
-    
       const imgData = product.img
         .filter((item) => imgID.includes(item.id))
         .map((item) => item.image_url);
 
-      setImageData(imgData); 
+      setImageData(imgData);
     }
   }, [productId, imgID]);
 
@@ -39,7 +42,8 @@ export default function ProductRightToLeft({ productId, template, imgID = [] }) 
             <div className={cx("cham2")}></div>
             <div className={cx("cham3")}></div>
           </div>
-          <div className={cx("url")}>{productData?.url_web}</div>
+          <a></a>
+          <a href={productData?.url_web} className={cx("url")}>{productData?.url_web}</a>
         </div>
         <div className={cx("description")}>{productData?.description}</div>
         <div className={cx("threebutton")}>
@@ -51,7 +55,6 @@ export default function ProductRightToLeft({ productId, template, imgID = [] }) 
       </div>
 
       <div className={cx("right")}>
- 
         <img
           src={imageData[0] || "https://via.placeholder.com/150"}
           alt="Ảnh 1"

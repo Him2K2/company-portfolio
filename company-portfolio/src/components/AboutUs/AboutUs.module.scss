@@ -1,0 +1,200 @@
+.wrapper {
+    
+}
+
+.bodyy {
+    display: flex;
+    
+    margin: 4rem;
+    height: calc(100vh - 13.5rem);
+}
+
+.left {
+    width: 40vw;
+    position: relative;
+}
+
+.right {
+    width: 60vw;
+
+}
+
+.cucxanh {
+    position: absolute;
+    left: -5rem;
+    top: -4rem;
+    z-index: 0;
+    background-color: rgb(23, 129, 221);
+    width: 30rem;
+    height: 30rem;
+
+}
+
+.avatar {
+    z-index: 1;
+    position: absolute;
+    margin: 5rem;
+    width: 40rem;
+    height: 40rem;
+}
+
+.usme {
+    color: blue;
+
+    font-size: 10rem;
+}
+
+.ham {
+    display: flex;
+    margin: 1rem;
+}
+
+.cham1 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(0, 12, 143);
+    margin-left: 1rem;
+}
+
+.cham2 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(23, 129, 221);
+    margin-left: 1rem;
+
+}
+
+.cham3 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(147, 202, 245);
+    margin-left: 1rem;
+
+}
+
+.info {
+    margin: 5rem;
+    font-weight: bold;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.description1 {
+    display: flex;
+    margin: 2rem;
+    align-items: center;
+
+    .btn1 {
+        margin: 2rem;
+        background-color: rgb(23, 129, 221);
+        color: #fff;
+        border: none;
+        font-size: 2rem;
+        flex-shrink: 0;
+        width: 5rem !important;
+        height: 5rem !important;
+
+        &:hover {
+            background-color: blue;
+        }
+    }
+}
+
+.description2 {
+    display: flex;
+    margin: 2rem;
+    align-items: center;
+
+    .btn2 {
+        margin: 2rem;
+        background-color: rgb(23, 129, 221);
+        color: #fff;
+        border: none;
+        font-size: 2rem;
+        flex-shrink: 0;
+        width: 5rem;
+        height: 5rem;
+
+        &:hover {
+            background-color: blue;
+        }
+    }
+
+}
+$mobile: 480px;
+$tablet: 1024px;
+@media (max-width: $mobile) {
+    .cucxanh, .avatar,.ham {
+      display: none;
+    }
+  .info{
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+  }
+    .usme {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      font-size: 2.5rem; // Tăng so với 1rem để dễ đọc
+    }
+  
+    .description {
+      width: 100%;
+    }
+    .description1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    .description2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+  
+    .btn1, .btn2 {
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.6rem;
+    }
+  
+    .bodyy {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     margin: 1rem;
+    }
+  }
+  
+  @media (min-width: ($mobile + 1)) and (max-width: $tablet) {
+    .cucxanh {
+      display: none;
+    }
+  
+    .avatar {
+      width: 25rem;
+      height: 25rem;
+      margin: 3rem;
+    }
+  
+    .usme {
+      font-size: 6rem;
+    }
+  
+    .btn1, .btn2 {
+      width: 4.5rem;
+      height: 4.5rem;
+      font-size: 1.8rem;
+    }
+  }
+  
