@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Home></Home>
-      <ProductRightToLeft></ProductRightToLeft> 
+      <ProductRightToLeft productId={1} imgID={[1]}></ProductRightToLeft> 
       <Footer></Footer>
     </div>
   );
