@@ -80,6 +80,7 @@ $tablet: 1024px;
 @media (max-width: $mobile) {
   .wrapper {
     width: 100vw;
+    overflow: hidden; 
   }
 
   .thanhdoc, .overlay, .background, .left {
@@ -89,6 +90,7 @@ $tablet: 1024px;
   .backgroundAll {
     position: static;
     width: 100vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,7 +100,8 @@ $tablet: 1024px;
   .right {
     position: static;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
+    overflow: hidden; 
   }
 
   .introduction {

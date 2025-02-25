@@ -1,0 +1,152 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    display: flex;
+}
+
+.left {
+    width: 40vw;
+    height: 100vh;
+}
+
+.right {
+    width: 60vw;
+    height: 100vh;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+}
+
+.title1 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.title2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: rgb(34, 128, 255);
+    border-left: 0.5rem solid rgb(255, 255, 255);
+    border-right: 0.5rem solid rgb(255, 255, 255);
+    color: #fff;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+}
+
+.img {
+    width: 20vw;
+    height: 35vh;
+    border: 0.5rem solid rgb(255, 255, 255);
+
+
+}
+
+
+.img1 {
+    width: 91rem;
+    height: 100vh;
+    border: 0.5rem solid rgb(255, 255, 255);
+
+}
+
+@media (max-width: 480px) {
+
+    .right {
+        all: unset !important;
+    }
+
+    .row2 {
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 100vh;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        right: 100vh;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .img1 {
+        position: relative;
+        top: -34rem;
+        width: 100vw;
+        height: 50vh;
+
+    }
+}
+
+
+@media (min-width:481px) and (max-width:1025px) {
+    .wrapper {
+        width: 50vh;
+        height: 50vh;
+    }
+
+    .background {
+        width: 50vh;
+        height: 50vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .row1,
+    .row3 {
+        display: none;
+    }
+    .row2{
+        width: 1000px;
+    }
+
+    .left {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img1 {
+        width: 100vw;
+        height: 50vh;
+    }
+
+}
