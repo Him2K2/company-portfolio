@@ -16,8 +16,6 @@ export default function TopToBot({ productId, template, imgID = [] }) {
     const product = products.find((item) => item.id === productId);
 
     if (product) {
-      console.log(product);
-
       setProductData(product);
 
       const imgData = product.img

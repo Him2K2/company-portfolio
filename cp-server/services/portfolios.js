@@ -4,7 +4,7 @@ class PortfolioService {
   constructor() {}
 
   getById(id) {
-    const { portfolios, companies, products, product_img, product_portfolio, employees, employee_portfolio, portfolio_pages, templates } = DataManager.allData;
+    const { portfolios, companies, products, product_img, product_portfolio, employees, employee_portfolio, portfolio_pages, templates , service} = DataManager.allData;
 
     // Lấy portfolio theo id
     const portfolio = portfolios[id];
@@ -53,6 +53,8 @@ class PortfolioService {
     // Lấy template tương ứng với template_id
     const portfolioTemplate = templates.filter((t) => templateIds.includes(t.id));
 
+    //
+
     // Tổng hợp dữ liệu trả về
     const portfolioData = {
       portfolio,
@@ -61,6 +63,7 @@ class PortfolioService {
       portfolioEmployees,
       pages,
       portfolioTemplate,
+      service,
     };
 
     return portfolioData;
