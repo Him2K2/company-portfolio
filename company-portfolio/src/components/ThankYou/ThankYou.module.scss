@@ -1,0 +1,175 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    width: 100vw;
+    height: 22vh;
+
+
+}
+
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 40vh;
+
+}
+
+.a {
+    display: flex;
+}
+
+.thank {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    width: 60vw;
+    height: 30vh;
+    background-color: rgb(0, 68, 255);
+    z-index: 1;
+
+}
+
+.brownblock1 {
+    width: 20rem;
+    height: 20rem;
+    background-color: rgba(87, 82, 75, 0.099);
+    position: relative;
+    bottom: 5rem;
+    left: 15rem;
+    z-index: 0;
+
+}
+
+.brownblock2 {
+    width: 20rem;
+    height: 20rem;
+    background-color: rgba(87, 82, 75, 0.099);
+    position: relative;
+    bottom: 5rem;
+    right: 15rem;
+
+    z-index: 0;
+}
+
+.contact {
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.website {
+    display: flex;
+    align-items: center;
+}
+.emailicon{
+    margin-right: 1rem;
+    color: red;
+}
+
+.phoneicon{
+    margin-right: 1rem;
+    color:green;
+
+}
+
+.linkicon{
+    margin-right: 1rem;
+    color: blue;
+
+}
+
+
+.ham {
+    display: flex;
+    margin: 1rem;
+}
+
+.cham1 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(0, 12, 143);
+    margin-left: 1rem;
+}
+
+.cham2 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(23, 129, 221);
+    margin-left: 1rem;
+
+}
+
+.cham3 {
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(147, 202, 245);
+    margin-left: 1rem;
+
+}
+.footer{
+    background-color: blue;
+    width: 100vw;
+    height: 3vw;
+}
+@media (max-width:600px) {
+.wrapper{
+
+}
+.block{
+
+}
+.thankyou{
+    display: flex;
+    width: 100%;
+
+}
+.a{
+
+}
+.brownblock1{
+    display: none;
+}
+.thank{
+    width: 100%;
+
+}
+.brownblock2{
+    display: none;
+}
+.contact{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+    
+}

@@ -35,12 +35,10 @@ export default function ProductIntroduction1({
         <div className={cx("thanhdoc")}></div>
         </div>
         <div className={cx("right")}>
-          <img></img>
           <div className={cx("introduction")}>
             <div className={cx("header")}>Phần I</div>
             <div className={cx("introduct")}>Dự án WEB/APP</div>
           </div>
-          <img></img>
         </div>
       </div>
     </div>

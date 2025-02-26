@@ -9,6 +9,7 @@ import TopToBot from "./components/TopToBot";
 import ProductIntroduction3 from "./components/ProductIntroduction3";
 import UsService from "./components/UsService";
 import Employees from "./components/Employees";
+import ThankYou from "./components/ThankYou";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <ProductIntroduction3></ProductIntroduction3>
       <UsService companyId={1}></UsService>
       <Employees></Employees>
+      <ThankYou></ThankYou>
+
     </div>
   );
 }
